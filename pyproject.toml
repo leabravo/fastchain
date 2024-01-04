@@ -8,11 +8,14 @@ packages = [{include = "fastchain", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "3.11.6"
-fastapi = {extras = ["all"], version = "^0.104.1"}
+fastapi = {extras = ["all"], version = "^0.85.1"}
 langchain = "^0.0.330"
 jq = "^1.6.0"
 sqlalchemy = "^2.0.23"
 openai = "^0.28.1"
+requests = "^2.31.0"
+tiktoken = "^0.5.2"
+chromadb = "0.3.29"
 
 [build-system]
 requires = ["poetry-core"]

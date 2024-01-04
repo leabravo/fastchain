@@ -5,6 +5,8 @@ from langchain.prompts.chat import (
     AIMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
+from langchain.prompts import PromptTemplate
+from langchain.utils.math import cosine_similarity
 
 def create_template(templates: Templates) -> ChatPromptTemplate:
     all_templates = []
